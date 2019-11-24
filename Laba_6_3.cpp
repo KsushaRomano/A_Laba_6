@@ -16,10 +16,10 @@ int main()
 	};
 	for (i = 0; i < N - 1; i++) {
 		for (j = 0; j < N - 1; j++) {
-			if (A[j][j] > A[j + 1][j + 1]) {
-				k = A[j][j];
-				A[j][j] = A[j + 1][j + 1];
-				A[j + 1][j + 1] = k;
+			if (A[i][i] > A[i + 1][i + 1]) {
+				k = A[i][i];
+				A[i][i] = A[i + 1][i + 1];
+				A[i + 1][i + 1] = k;
 			};
 		};
 	};
